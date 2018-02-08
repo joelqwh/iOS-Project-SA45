@@ -15,6 +15,9 @@
 		0F7DB3CC202C18DE0049A313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7DB3CA202C18DE0049A313 /* LaunchScreen.storyboard */; };
 		0F7DB3D7202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB3D6202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelTests.swift */; };
 		0F7DB3E2202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB3E1202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift */; };
+		3306547A202C2220002A4FC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33065478202C2220002A4FC5 /* LoginViewController.swift */; };
+		3306547B202C2220002A4FC5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33065479202C2220002A4FC5 /* LoginViewController.xib */; };
+		3306547D202C25AA002A4FC5 /* LoginAccount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3306547C202C25AA002A4FC5 /* LoginAccount.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		0F7DB3DD202C18DE0049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao JoelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Project SA45 Yee Junyi & Qin Wenhao JoelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7DB3E1202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift"; sourceTree = "<group>"; };
 		0F7DB3E3202C18DE0049A313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33065478202C2220002A4FC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33065479202C2220002A4FC5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3306547C202C25AA002A4FC5 /* LoginAccount.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LoginAccount.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				0F7DB3BF202C18DE0049A313 /* AppDelegate.swift */,
+				33065478202C2220002A4FC5 /* LoginViewController.swift */,
+				33065479202C2220002A4FC5 /* LoginViewController.xib */,
 				0F7DB3C1202C18DE0049A313 /* FirstViewController.swift */,
 				0F7DB3C3202C18DE0049A313 /* SecondViewController.swift */,
 				0F7DB3C5202C18DE0049A313 /* Main.storyboard */,
 				0F7DB3C8202C18DE0049A313 /* Assets.xcassets */,
 				0F7DB3CA202C18DE0049A313 /* LaunchScreen.storyboard */,
 				0F7DB3CD202C18DE0049A313 /* Info.plist */,
+				3306547C202C25AA002A4FC5 /* LoginAccount.plist */,
 			);
 			path = "iOS Project SA45 Yee Junyi & Qin Wenhao Joel";
 			sourceTree = "<group>";
@@ -235,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3306547B202C2220002A4FC5 /* LoginViewController.xib in Resources */,
 				0F7DB3CC202C18DE0049A313 /* LaunchScreen.storyboard in Resources */,
 				0F7DB3C9202C18DE0049A313 /* Assets.xcassets in Resources */,
+				3306547D202C25AA002A4FC5 /* LoginAccount.plist in Resources */,
 				0F7DB3C7202C18DE0049A313 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3306547A202C2220002A4FC5 /* LoginViewController.swift in Sources */,
 				0F7DB3C4202C18DE0049A313 /* SecondViewController.swift in Sources */,
 				0F7DB3C0202C18DE0049A313 /* AppDelegate.swift in Sources */,
 				0F7DB3C2202C18DE0049A313 /* FirstViewController.swift in Sources */,
