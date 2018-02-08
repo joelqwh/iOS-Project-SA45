@@ -15,6 +15,7 @@
 		0F7DB3CC202C18DE0049A313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7DB3CA202C18DE0049A313 /* LaunchScreen.storyboard */; };
 		0F7DB3D7202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB3D6202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelTests.swift */; };
 		0F7DB3E2202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB3E1202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift */; };
+		0F7DB42E202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB42C202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0F7DB3DD202C18DE0049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao JoelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Project SA45 Yee Junyi & Qin Wenhao JoelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7DB3E1202C18DE0049A313 /* iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS_Project_SA45_Yee_Junyi___Qin_Wenhao_JoelUITests.swift"; sourceTree = "<group>"; };
 		0F7DB3E3202C18DE0049A313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F7DB42D202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7DB3BF202C18DE0049A313 /* AppDelegate.swift */,
+				0F7DB42C202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld */,
 				0F7DB3C1202C18DE0049A313 /* FirstViewController.swift */,
 				0F7DB3C3202C18DE0049A313 /* SecondViewController.swift */,
 				0F7DB3C5202C18DE0049A313 /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7DB42E202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld in Sources */,
 				0F7DB3C4202C18DE0049A313 /* SecondViewController.swift in Sources */,
 				0F7DB3C0202C18DE0049A313 /* AppDelegate.swift in Sources */,
 				0F7DB3C2202C18DE0049A313 /* FirstViewController.swift in Sources */,
@@ -556,6 +560,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0F7DB42C202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0F7DB42D202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodel */,
+			);
+			currentVersion = 0F7DB42D202C33D70049A313 /* iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodel */;
+			path = "iOS Project SA45 Yee Junyi & Qin Wenhao Joel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0F7DB3B4202C18DE0049A313 /* Project object */;
 }
