@@ -109,6 +109,7 @@
 				0F7DB3C8202C18DE0049A313 /* Assets.xcassets */,
 				0F7DB3CA202C18DE0049A313 /* LaunchScreen.storyboard */,
 				0F7DB3CD202C18DE0049A313 /* Info.plist */,
+				3306547C202C25AA002A4FC5 /* LoginAccount.plist */,
 			);
 			path = "iOS Project SA45 Yee Junyi & Qin Wenhao Joel";
 			sourceTree = "<group>";
@@ -238,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3306547B202C2220002A4FC5 /* LoginViewController.xib in Resources */,
 				0F7DB3CC202C18DE0049A313 /* LaunchScreen.storyboard in Resources */,
 				0F7DB3C9202C18DE0049A313 /* Assets.xcassets in Resources */,
+				3306547D202C25AA002A4FC5 /* LoginAccount.plist in Resources */,
 				0F7DB3C7202C18DE0049A313 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

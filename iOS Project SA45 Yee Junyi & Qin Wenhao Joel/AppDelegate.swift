@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let vc : LoginViewController = LoginViewController(nibName:"LoginViewController", bundle:nil)
+        window?.rootViewController = vc
         return true
     }
 
