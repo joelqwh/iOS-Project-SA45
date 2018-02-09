@@ -53,6 +53,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         do {
             try managedObjectContext.save()
             status.text = "Attendance Saved"
+            
         } catch let error as NSError {
             status.text = "Error: " + error.localizedFailureReason!
             print ("Failed : \(error.localizedDescription)")

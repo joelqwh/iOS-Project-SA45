@@ -132,6 +132,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="View Current Attendance" image="second" id="QZo-Lg-yjj"/>
+                    <connections>
+                        <outlet property="attendanceTable" destination="G9m-gd-qYJ" id="e06-CM-DNP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzA-eW-3Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
