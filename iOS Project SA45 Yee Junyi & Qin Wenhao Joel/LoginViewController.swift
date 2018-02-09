@@ -15,30 +15,36 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    // Do any additional setup after loading the view.
+    
     }
-
-        // Do any additional setup after loading the view.
-    @IBAction func Login(_ sender:AnyObject){
-            let path = Bundle.main.path(forResource: "LoginAccount", ofType: "plist") as String!
-            print("bundle plist:" + path!)
-            print(Bundle.main.description)
-            let dict : AnyObject = NSDictionary(contentsOfFile: path!)!
-            
-            if (textFieldUserId.text != dict.value(forKey: "UserID") as? String || textFieldPassword.text != dict.value(forKey: "Password") as? String) {
-                let alert = UIAlertController(title: "!!!", message: "Invalid Credentials", preferredStyle: UIAlertControllerStyle.alert)
-                let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-                }
-                alert.addAction(OKAction)
-                
-                self.present(alert, animated: true, completion: nil);
-                return
+    
+    @IBAction func Login(_ sender:Any){
+        //let userid = textFieldUserId.text
+        //let password = textFieldPassword.text
+        let path = Bundle.main.path(forResource: "LoginAccount", ofType: "plist") as String!
+        print("bundle plist:" + path!)
+        print(Bundle.main.description)
+        let dict : AnyObject = NSDictionary(contentsOfFile: path!)!
+        
+        if (textFieldUserId.text != dict.value(forKey: "UserID") as? String || textFieldPassword.text != dict.value(forKey: "Password") as? String
+            ) {
+            let alert = UIAlertController(title: "!!!", message: "Invalid Credentials", preferredStyle: UIAlertControllerStyle.alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
             }
+            alert.addAction(OKAction)
             
-            if (textFieldUserId.text == dict.value(forKey: "UserID") as? String && textFieldPassword.text == dict.value(forKey:"Password") as? String) {
+            self.present(alert, animated: true, completion: nil);
+            return
+        }
+        
+        if (textFieldUserId.text! == dict.value(forKey: "UserID") as? String! && textFieldPassword.text! == dict.value(forKey:"Password") as? String!) {
             
+            performSegue(withIdentifier: "LoginSuccess", sender: self)
             
-            }
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
