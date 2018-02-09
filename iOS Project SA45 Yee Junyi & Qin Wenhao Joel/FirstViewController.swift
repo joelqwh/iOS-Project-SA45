@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var status: UILabel!
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var nameForAttendance: UITextField!
     let dateFormatter = DateFormatter()
+    
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +26,6 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateLabel), userInfo: nil, repeats: true)
         
         nameForAttendance.delegate = self
-        
         
     }
     
@@ -38,6 +41,21 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBAction func confirmAttendance(_ sender: Any) {
         nameForAttendance.resignFirstResponder()
         
+        let entityDescription = NSEntityDescription.entity(forEntityName: "Attendance", in: managedObjectContext)
+        
+        let attend = AttendanceMO(entity: entityDescription!, insertInto: managedObjectContext) //diff from workshop
+        
+        attend.studentId = nameForAttendance.text
+        attend.dateTime = dateFormatter.string(from:Date())
+        
+        do {
+            try managedObjectContext.save()
+            status.text = "Attendance Saved"
+        } catch let error as NSError {
+            status.text = "Error: " + error.localizedFailureReason!
+            print ("Failed : \(error.localizedDescription)")
+        }
+   
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
