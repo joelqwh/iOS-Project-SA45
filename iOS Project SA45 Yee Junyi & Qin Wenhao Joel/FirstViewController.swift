@@ -39,6 +39,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func confirmAttendance(_ sender: Any) {
+        if ((nameForAttendance.text?.count)! < 10 && (nameForAttendance.text?.count)! > 0)
+        {
         nameForAttendance.resignFirstResponder()
         
         let entityDescription = NSEntityDescription.entity(forEntityName: "Attendance", in: managedObjectContext)
@@ -55,6 +57,12 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             status.text = "Error: " + error.localizedFailureReason!
             print ("Failed : \(error.localizedDescription)")
         }
+    }
+    else
+        {
+            status.text = "ID wrong. Please try again"
+        }
+        
    
     }
     
